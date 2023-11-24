@@ -1,7 +1,6 @@
 const matrixService = require("../services/matrixService");
 
 const process = (req, res) => {
-  console.log(req.body);
 
   const { matrix } = req.body;
 
