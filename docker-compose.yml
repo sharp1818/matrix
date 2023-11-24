@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    image: matriz
+    container_name: matriz
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - DEBUG=true
+      - PORT=3000
+    volumes:
+      - .:/usr/src/app
